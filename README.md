@@ -1,28 +1,19 @@
-# php-getting-started
+<h2>Java Connect App</h2>
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
+<p>Java Heroku Connect Sample</p>
+<ul>
+<li>Simple bootstrap Java app.</li>
+<li>Establishes connection to Heroku Postgres.</li>
+<li>Queries a salesforce Heroku Connect Account Table.</li>
+</ul>
+<p>Starting point for Salesforce/Heroku POC Demonstrations</p>
 
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+<h2>Setting up your App</h4>
 
-## Deploying
+<h5>Heroku App</h5>
 
-Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+1.) Create an app 2.) Add Postgres Addon 3.) Add Heroku Connect Addon 4.) Set up a free Salesforce developer account 4.) Set up Heroku Connect Connection using the above account 5.) From Heroku Connect Dashboard, add a Mapping for Account with any fields, query will pull all 6.) Link your app to this GitHub Repo 7.) Deploy
 
-```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+<h4>Changing the Database Query</h4>
 
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using PHP on Heroku, see these Dev Center articles:
-
-- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+Update query in Main.java
