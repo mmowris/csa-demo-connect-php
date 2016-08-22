@@ -16,4 +16,4 @@
 
 <h4>Changing the Database Query</h4>
 
-Update query in Main.java
+Update query in index.php
