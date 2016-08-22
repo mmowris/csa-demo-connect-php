@@ -32,7 +32,7 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 );
 
 $app->get('/db/', function() use($app) {
-  $st = $app['pdo']->prepare('SELECT name FROM test_table');
+  $st = $app['pdo']->prepare('SELECT * FROM salesforce.account');
   $st->execute();
 
   $names = array();
