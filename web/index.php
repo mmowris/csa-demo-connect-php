@@ -16,11 +16,11 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 // Our web handlers
-
+/*
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('index.twig');
-});
+});*/
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
 $app->register(new Herrera\Pdo\PdoServiceProvider(),
@@ -31,7 +31,7 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
                )
 );
 
-$app->get('/db/', function() use($app) {
+$app->get('/', function() use($app) {
   $st = $app['pdo']->prepare('SELECT * FROM salesforce.account');
   $st->execute();
 
